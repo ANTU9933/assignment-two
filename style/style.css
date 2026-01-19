@@ -20,7 +20,7 @@ header .header-container {
   width: 75%;
   max-width: 1200px;
 
-  margin: 30px auto 0px;
+  margin: 30px auto 30px;
   display: flex;
 
   justify-content: space-between;
@@ -65,6 +65,7 @@ header .header-left {
   width: 100%;
   max-width: 1600px;
   margin-top: 30px;
+  margin-bottom: 30px;
   align-items: center;
   text-align: center;
 }
@@ -166,7 +167,7 @@ header .header-left {
 .chose-items {
   margin-top: 80px;
   background-color: #230e3d;
-  margin-bottom: 20px;
+  /* margin-bottom: 30px; */
 }
 
 .items-container h2 {
@@ -204,7 +205,6 @@ header .header-left {
   display: grid;
   gap: 20px;
 
-  border: 1px solid white;
   grid-template-areas:
     "premium mobile mobile"
     "premium global global"
@@ -214,13 +214,15 @@ header .header-left {
   width: 60px;
   margin-top: 20px;
 }
-.item-box div h3 {
+.item-box div h3,
+.video-box h3 {
   font-size: 24px;
   color: white;
   font-weight: bold;
   margin-top: 16px;
 }
-.item-box div p {
+.item-box div p,
+.video-box p {
   font-size: 16px;
   color: #ffffff;
   line-height: 24px;
@@ -228,4 +230,47 @@ header .header-left {
 }
 .item-box div .fa-bolt {
   font-size: 60px;
+}
+.feature-apisode {
+  margin-top: 100px;
+}
+.feature-video {
+  width: 75%;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.feature-video h2 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.video-container {
+  margin-top: 20px;
+  width: 1200px;
+  display: flex;
+
+  gap: 10px;
+}
+
+.video-box {
+  width: 380px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.video-box iframe {
+  width: 350px;
+  border-radius: 15px;
+}
+.clock-image {
+  display: flex;
+  
+  align-items:baseline;
+  gap: 10px;
+}
+.clock-image img {
+  width: 15px;
+  height: 15px;
+  
 }
