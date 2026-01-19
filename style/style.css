@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #1a0b2e;
+}
+.color,
+.exclusive i {
+  background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+header .header-container {
+  width: 75%;
+  max-width: 1200px;
+
+  margin: 30px auto 0px;
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+header .header-left {
+  color: white;
+  font-size: 20px;
+}
+.header-middle ul {
+  display: flex;
+  gap: 20px;
+}
+.header-middle li {
+  list-style-type: none;
+}
+.header-middle a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header-right button {
+  width: 135px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+
+  font-size: 16px;
+  padding: 12px 40px 12px 16px;
+  border-radius: 25px;
+  border: none;
+}
+.banner {
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+}
+.banner-content {
+  width: 550px;
+  margin: 101px auto;
+}
+.banner-content .image-box {
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+.image-box button {
+  background-color: green;
+  color: white;
+  width: 75px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+.banner-content h3 {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.banner-content p {
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.banner-content .listen {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+
+  background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+
+  font-size: 16px;
+
+  border-radius: 25px;
+  border: none;
+}
+.banner-content .subscribe {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  background-color: #1a0b2e;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#podcast {
+  text-align: center;
+}
+#podcast .podcast-container {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#podcast .written-section {
+  margin: 30px auto;
+  padding: 0px 200px;
+}
+#podcast .written-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+#podcast .written-section p,
+.subscriber p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 28px;
+  color: white;
+  margin: 15px auto;
+}
+.subscriber-details {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+.subscriber-details .subscriber h1 {
+  font-size: 48px;
+  color: #00ff88;
+}
+.subscriber .fa-plus {
+  font-size: 30px;
+}
+.chose-items {
+  margin-top: 80px;
+  background-color: #230e3d;
+  margin-bottom: 20px;
+}
+
+.items-container h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+.item-box div {
+  background-color: #351165;
+  padding: 40px;
+  border-radius: 20px;
+}
+.mobile {
+  grid-area: mobile;
+}
+.global {
+  grid-area: global;
+}
+.premium {
+  grid-area: premium;
+}
+.exclusive {
+  grid-area: exclusive;
+}
+.rich {
+  grid-area: rich;
+}
+
+.item-box {
+  width: 75%;
+  max-width: 1200px;
+  margin: 60px auto 0px;
+  display: grid;
+  gap: 20px;
+
+  border: 1px solid white;
+  grid-template-areas:
+    "premium mobile mobile"
+    "premium global global"
+    "exclusive exclusive rich";
+}
+.item-box div img {
+  width: 60px;
+  margin-top: 20px;
+}
+.item-box div h3 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.item-box div p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.item-box div .fa-bolt {
+  font-size: 60px;
+}
