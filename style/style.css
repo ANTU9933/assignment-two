@@ -215,14 +215,14 @@ header .header-left {
   margin-top: 20px;
 }
 .item-box div h3,
-.video-box h3 {
+.video-box h3 ,.details h3 {
   font-size: 24px;
   color: white;
   font-weight: bold;
   margin-top: 16px;
 }
 .item-box div p,
-.video-box p {
+.video-box p ,.details p {
   font-size: 16px;
   color: #ffffff;
   line-height: 24px;
@@ -239,7 +239,7 @@ header .header-left {
   max-width: 1200px;
   margin: 100px auto;
 }
-.feature-video h2 {
+.feature-video h2 ,.meet h2{
   font-size: 48px;
   color: white;
   text-align: center;
@@ -255,6 +255,7 @@ header .header-left {
 }
 
 .video-box {
+  background-color: #351165;
   width: 380px;
   padding: 15px;
   border-radius: 15px;
@@ -262,6 +263,7 @@ header .header-left {
 .video-box iframe {
   width: 350px;
   border-radius: 15px;
+  padding: 1px;
 }
 .clock-image {
   display: flex;
@@ -273,4 +275,39 @@ header .header-left {
   width: 15px;
   height: 15px;
   
+}
+.feature-details{
+  margin-top: 50px;
+
+}
+
+.histoty{
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+.images  img{
+   
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 6px;
+  object-fit: contain;
+ 
+ 
+}
+.details .images{
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+ 
+
 }
