@@ -59,6 +59,9 @@ header .header-left {
   border-radius: 25px;
   border: none;
 }
+.hamberger {
+  display: none;
+}
 .banner {
   background-image: url("../assets/hero-bg.png");
   background-size: cover;
@@ -116,6 +119,12 @@ header .header-left {
   font-size: 16px;
   margin-top: 8px;
 }
+.banner-content .button-class {
+  display: flex;
+  gap: 20px;
+
+  align-items: baseline;
+}
 .banner-content .listen {
   padding: 10px;
   margin-top: 20px;
@@ -127,6 +136,9 @@ header .header-left {
 
   border-radius: 25px;
   border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .banner-content .subscribe {
   font-size: 16px;
@@ -137,6 +149,9 @@ header .header-left {
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #podcast {
   text-align: center;
@@ -357,4 +372,130 @@ header .header-left {
   font-size: 16px;
   margin-top: 20px;
   color: white;
+}
+@media screen and (max-width: 576px) {
+  header .header-container {
+    width: 90%;
+  }
+    .header-middle {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-content h3 {
+    font-size: 30px;
+  }
+  .banner-content .button-class {
+    justify-content: center;
+  }
+  #podcast .podcast-container {
+    width: 90%;
+   
+}
+#podcast .written-section {
+    
+    padding:10px;
+}
+#podcast .written-section {
+    margin: 10px auto;
+    
+}
+#podcast .written-section h2 {
+    font-size: 20px;
+    
+}
+.subscriber-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.subscriber-details .subscriber h1 {
+    font-size: 40px;
+    color: #00ff88;
+}
+
+.items-container h2 {
+    font-size: 25px;
+   
+    
+   
+}
+ .item-box {
+   width: 100%;
+   padding: 20px;
+    grid-template-areas:
+      "premium"
+      "mobile"
+      "global"
+      "exclusive"
+      "rich";
+  }
+.feature-apisode {
+    margin-top: 50px;
+}
+.feature-video {
+    width: 100%;
+   
+}
+  .feature-video h2, .meet h2 {
+    font-size: 25px;
+  
+}
+  .video-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+  }
+  .feature-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  .video-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .video-box iframe {
+    height: 200px;
+  }
+   .histoty {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+ 
+  .banner-content .image-box {
+    width: 200px;
+    height: auto;
+  }
+  .details .images {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+   justify-content: center;
+}
+  .banner {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+ 
 }
