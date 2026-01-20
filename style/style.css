@@ -62,33 +62,48 @@ header .header-left {
 .banner {
   background-image: url("../assets/hero-bg.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
   max-width: 1600px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  align-items: center;
+  margin: 50px auto 30px;
+
   text-align: center;
 }
 .banner-content {
   width: 550px;
-  margin: 101px auto;
+  margin: 130px auto;
 }
 .banner-content .image-box {
+  position: relative;
   width: 350px;
+  height: 350px;
   margin: 0 auto;
   display: flex;
   text-align: center;
 }
-.image-box button {
-  background-color: green;
-  color: white;
-  width: 75px;
-  height: 40px;
-  font-size: 18px;
-  font-weight: 400;
-  border-radius: 10px;
-  padding: 10px;
+.circle {
+  width: 100%;
+  height: auto;
   border: none;
+}
+.mic {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-box button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #1effa8;
+  border: none;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .banner-content h3 {
   color: white;
@@ -309,43 +324,37 @@ header .header-left {
   display: flex;
   gap: 30px;
 }
-.footer{
+.footer {
   margin-top: 100px;
   background-image: url("../assets/footer-bg.png");
   background-size: cover;
   border: 2px solid wheat;
   height: 400px;
-  
-
 }
-.footer-container{
+.footer-container {
   width: 610px;
   margin-top: 20px;
   margin: 0 auto;
   text-align: center;
   margin-top: 120px;
-
-  
 }
-.footer-container h2{
+.footer-container h2 {
   font-size: 60px;
   color: white;
   margin-bottom: 32px;
 }
-.footer-container div{
+.footer-container div {
   display: flex;
   gap: 10px;
-   align-items:last baseline;
+  align-items: last baseline;
 }
-.footer-container img{
+.footer-container img {
   margin-left: 30px;
   width: 15px;
   height: 15px;
- 
-
 }
-.footer-container p{
-font-size: 16px;
-margin-top: 20px;
-color: white;
+.footer-container p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: white;
 }
